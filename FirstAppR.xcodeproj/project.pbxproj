@@ -15,6 +15,7 @@
 		7C79A2F125BE0A1E007DFDB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C79A2EF25BE0A1E007DFDB0 /* LaunchScreen.storyboard */; };
 		7C8303F825D4BF3A00D8D527 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8303F725D4BF3A00D8D527 /* Refeicao.swift */; };
 		7C8303FB25D4BF8E00D8D527 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8303FA25D4BF8D00D8D527 /* Item.swift */; };
+		7C83044425D781DC00D8D527 /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83044325D781DC00D8D527 /* RefeicoesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7C79A2F225BE0A1E007DFDB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8303F725D4BF3A00D8D527 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		7C8303FA25D4BF8D00D8D527 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7C83044325D781DC00D8D527 /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				7C79A2E825BE0A1A007DFDB0 /* ViewController.swift */,
+				7C83044325D781DC00D8D527 /* RefeicoesTableViewController.swift */,
 			);
 			path = Controlers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				7C8303FB25D4BF8E00D8D527 /* Item.swift in Sources */,
 				7C79A2E925BE0A1A007DFDB0 /* ViewController.swift in Sources */,
 				7C79A2E525BE0A1A007DFDB0 /* AppDelegate.swift in Sources */,
+				7C83044425D781DC00D8D527 /* RefeicoesTableViewController.swift in Sources */,
 				7C79A2E725BE0A1A007DFDB0 /* SceneDelegate.swift in Sources */,
 				7C8303F825D4BF3A00D8D527 /* Refeicao.swift in Sources */,
 			);
