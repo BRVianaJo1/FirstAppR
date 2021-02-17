@@ -61,7 +61,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             if let position = itensSelecionados.firstIndex(of: item){
                 itensSelecionados.remove(at: position)
                 
-                }
             }
             
         }
