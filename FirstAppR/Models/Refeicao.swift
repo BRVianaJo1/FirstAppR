@@ -11,18 +11,19 @@ class Refeicao: NSObject {
     // MARK: - Atributos
     let nome: String
     let felicidade: Int
-    let items: Array<Item> = []
+    var itens: Array<Item> = []
     
-    // MARK: - Construtor
+    // MARK: - Init
     
-    init(nome: String, felicidade: Int) {
+    init(nome: String, felicidade: Int, itens: [Item] = []) {
         self.nome = nome
         self.felicidade = felicidade
+        self.itens = itens
     }
     //MARK: - Metodos
     func totalDeCalorias() -> Double{
         var total = 0.0
-        for TESTE in items {
+        for TESTE in itens {
             total += TESTE.calorias
         }
         
