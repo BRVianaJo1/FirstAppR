@@ -8,7 +8,9 @@
 import UIKit
 
 class Refeicao: NSObject {
+    
     // MARK: - Atributos
+    
     let nome: String
     let felicidade: Int
     var itens: Array<Item> = []
@@ -20,6 +22,7 @@ class Refeicao: NSObject {
         self.felicidade = felicidade
         self.itens = itens
     }
+    
     //MARK: - Metodos
     func totalDeCalorias() -> Double{
         var total = 0.0

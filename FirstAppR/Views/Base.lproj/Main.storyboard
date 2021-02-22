@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2VK-Fv-4oU">
-                                <rect key="frame" x="20" y="278" width="374" height="532"/>
+                                <rect key="frame" x="0.0" y="278" width="414" height="532"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
@@ -74,6 +74,7 @@
                     <connections>
                         <outlet property="NomeTextField" destination="4NR-0i-7qw" id="ULY-CQ-cMc"/>
                         <outlet property="felicidadeTextField" destination="vWl-jb-lT5" id="Adq-lq-FBP"/>
+                        <outlet property="itensTableView" destination="2VK-Fv-4oU" id="j9s-If-6Tx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,7 +86,6 @@
             <objects>
                 <navigationController id="3iQ-ay-ViH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="foy-gg-9Br">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
