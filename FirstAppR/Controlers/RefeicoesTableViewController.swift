@@ -23,6 +23,10 @@ import UIKit
         let refeicao = refeicoes[indexPath.row]
         celula.textLabel?.text = refeicao.nome
         
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(mostrarDetalhes(_:)))
+        
+        celula.addGestureRecognizer(longPress)
+        
         return celula
     }
     
@@ -30,6 +34,18 @@ import UIKit
         print("Método add: \(refeicao.nome)")
         refeicoes.append(refeicao)
         tableView.reloadData()
+    }
+    
+    @objc func mostrarDetalhes(_ gesture: UILongPressGestureRecognizer){
+        if gesture.state == .began{
+            let celula = gesture.view as! UITableViewCell
+            
+            guard let indexPath = tableView.indexPath(for: celula) else { return }
+            
+            let refeicao = refeicoes[indexPath.row]
+            
+            print(refeicao.nome)
+        }
     }
     
     override func  prepare(for segue: UIStoryboardSegue, sender: Any?) {
