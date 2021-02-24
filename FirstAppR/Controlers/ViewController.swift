@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
    
     //MARK: - IBOutlets
     
-    @IBOutlet weak var itensTableView: UITableView!
+    @IBOutlet weak var itensTableView: UITableView?
     
     //MARK: - Atributos
     
@@ -47,11 +47,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func add(_ item: Item) {
         itens.append(item)
-        itensTableView.reloadData()
-        
+        itensTableView?.reloadData()
+        if let tableView = itensTableView{
+            tableView.reloadData()
+        } else {
+            let alerta = UIAlertController(title: "Desculpe", message: "Não foi possível atualizar a tabela", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alerta.addAction(ok)
+            
+            present(alerta, animated: true, completion: nil)
+        }
     }
-    //MARK: - UITableDataSource
-    
+    // MARK: - UITableViewDataSource
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itens.count
         
@@ -76,10 +84,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let linhadaTabela = indexPath.row
             itensSelecionados.append(itens[linhadaTabela])
             
-        } else{
+        } else {
             celula.accessoryType = .none
             let item = itens[indexPath.row]
-            if let position = itensSelecionados.firstIndex(of: item){
+            if let position = itensSelecionados.firstIndex(of: item) {
                 itensSelecionados.remove(at: position)
                 
             }
@@ -110,5 +118,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         navigationController?.popViewController(animated: true)
     }
-}
+  }
 

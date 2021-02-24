@@ -72,9 +72,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Vmw-8i-1ue"/>
                     <connections>
-                        <outlet property="NomeTextField" destination="4NR-0i-7qw" id="ULY-CQ-cMc"/>
                         <outlet property="felicidadeTextField" destination="vWl-jb-lT5" id="Adq-lq-FBP"/>
-                        <outlet property="itensTableView" destination="2VK-Fv-4oU" id="j9s-If-6Tx"/>
+                        <outlet property="itensTableView" destination="2VK-Fv-4oU" id="H4u-V0-1LK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -86,6 +85,7 @@
             <objects>
                 <navigationController id="3iQ-ay-ViH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="foy-gg-9Br">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

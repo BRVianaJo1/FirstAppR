@@ -44,7 +44,13 @@ import UIKit
             
             let refeicao = refeicoes[indexPath.row]
             
-            print(refeicao.nome)
+            let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
+            
+            let botaoCancelar = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            
+            alerta.addAction(botaoCancelar)
+            
+            present(alerta, animated: true, completion: nil)
         }
     }
     
