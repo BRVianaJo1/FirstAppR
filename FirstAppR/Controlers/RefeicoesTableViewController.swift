@@ -12,6 +12,7 @@ import UIKit
     var refeicoes = [Refeicao(nome: "Macarrao", felicidade: 5),
                      Refeicao(nome: "Churros", felicidade: 4),
                      Refeicao(nome: "Japa", felicidade: 5)]
+    var refeicaoSelecionada: Refeicao?
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return refeicoes.count
@@ -44,13 +45,11 @@ import UIKit
             
             let refeicao = refeicoes[indexPath.row]
             
-            let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
-            
-            let botaoCancelar = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            
-            alerta.addAction(botaoCancelar)
-            
-            present(alerta, animated: true, completion: nil)
+            RemoveRefeicaoViewController(controller: self).exibe(refeicao, handler:{alert in
+                self.refeicoes.remove(at: indexPath.row)
+                self.tableView.reloadData()
+                
+            })
         }
     }
     

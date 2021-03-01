@@ -18,6 +18,8 @@
 		7C83044425D781DC00D8D527 /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83044325D781DC00D8D527 /* RefeicoesTableViewController.swift */; };
 		7C83044825DDD14600D8D527 /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83044625DDD14600D8D527 /* AdicionarItensViewController.swift */; };
 		7C83044925DDD14600D8D527 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C83044725DDD14600D8D527 /* AdicionarItensViewController.xib */; };
+		7CC9FDE525EC3E9C00F7E665 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC9FDE425EC3E9B00F7E665 /* Alerta.swift */; };
+		7CC9FDE825EC78FD00F7E665 /* RemoveRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC9FDE725EC78FD00F7E665 /* RemoveRefeicaoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		7C83044325D781DC00D8D527 /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		7C83044625DDD14600D8D527 /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
 		7C83044725DDD14600D8D527 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
+		7CC9FDE425EC3E9B00F7E665 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
+		7CC9FDE725EC78FD00F7E665 /* RemoveRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveRefeicaoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			children = (
 				7C8303F725D4BF3A00D8D527 /* Refeicao.swift */,
 				7C8303FA25D4BF8D00D8D527 /* Item.swift */,
+				7CC9FDE425EC3E9B00F7E665 /* Alerta.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 				7C79A2E825BE0A1A007DFDB0 /* ViewController.swift */,
 				7C83044325D781DC00D8D527 /* RefeicoesTableViewController.swift */,
 				7C83044625DDD14600D8D527 /* AdicionarItensViewController.swift */,
+				7CC9FDE725EC78FD00F7E665 /* RemoveRefeicaoViewController.swift */,
 			);
 			path = Controlers;
 			sourceTree = "<group>";
@@ -177,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC9FDE525EC3E9C00F7E665 /* Alerta.swift in Sources */,
 				7C8303FB25D4BF8E00D8D527 /* Item.swift in Sources */,
 				7C79A2E925BE0A1A007DFDB0 /* ViewController.swift in Sources */,
+				7CC9FDE825EC78FD00F7E665 /* RemoveRefeicaoViewController.swift in Sources */,
 				7C83044825DDD14600D8D527 /* AdicionarItensViewController.swift in Sources */,
 				7C79A2E525BE0A1A007DFDB0 /* AppDelegate.swift in Sources */,
 				7C83044425D781DC00D8D527 /* RefeicoesTableViewController.swift in Sources */,
