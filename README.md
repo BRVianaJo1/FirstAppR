@@ -46,14 +46,15 @@ A intenção desse desenvolvimeto, foi praticar alguns conceitos do desevolvimen
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
 	
-  <img alt="Tela01" title="#Tela01" src="./Imagens/Tela01.png" width="300px">
+  <img alt="Tela01" title="#Tela01" src="./imagens/Tela01.png" width="300px">
   
 </p>
+
 ### Tela 02
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
 
-  <img alt="Tela02" title="#Tela02" src="./Imagens/Tela02.png" width="300px">
+  <img alt="Tela02" title="#Tela02" src="./imagens/Tela02.png" width="300px">
   
 </p>
 
@@ -61,7 +62,7 @@ A intenção desse desenvolvimeto, foi praticar alguns conceitos do desevolvimen
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
 
-  <img alt="Tela03" title="#Tela03" src="./Imagens/Tela03.png" width="300px">
+  <img alt="Tela03" title="#Tela03" src="./imagens/Tela03.png" width="300px">
    
 </p>
 
